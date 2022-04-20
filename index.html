@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Title</title> 
+</head>
+<body>
+ <script>
+var answer = Math.floor(Math.random() * 10);
+var guess = parseInt(window.prompt('猜數字!請輸入介在1~10的數字'));
+while(guess !== answer){ 
+     if(guess < answer){
+       window.alert('數字太小了，再大一點!');
+     }
+    else if(guess > answer){
+           window.alert('數字太大了，再小一點!');
+     } 
+        else{ 
+             window.alert('請輸入介在 1~10 的數字'); }
+             guess = parseInt(window.prompt('猜數字!請輸入介在1~10的數字'));
+      } 
+      window.alert('恭喜你猜對了!');
+   </script>
+</body>
+</html>
